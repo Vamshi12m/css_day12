@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .dot1 {
+            height: 30px;
+            width: 30px;
+            background-color: blue;
+            border-radius: 50%;
+            animation: animation 1s ease-in-out infinite alternate;
+            animation-delay: 0.3s;
+        }
+
+        .dot2 {
+            height: 30px;
+            width: 30px;
+            background-color: red;
+            border-radius: 50%;
+            animation: animation 1s ease-in-out infinite alternate;
+            animation-delay: 0.5s;
+        }
+
+        .dot3 {
+            height: 30px;
+            width: 30px;
+            background-color: yellow;
+            border-radius: 50%;
+            animation: animation 1s ease-in-out infinite alternate;
+            animation-delay: 0.7s;
+        }
+
+        .dot4 {
+            height: 30px;
+            width: 30px;
+            background-color: green;
+            border-radius: 50%;
+            animation: animation 1s ease-in-out infinite alternate;
+            animation-delay: 0.9s;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 40px;
+            display: none;
+
+        }
+
+        .main-container {
+            height: 450px;
+            width: 350px;
+            border: 1px solid;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 2px 2px 25px orangered;
+            background-color: white;
+
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            background-image: url('https://imgv3.fotor.com/images/share/Free-blue-gradient-pattern-background-from-Fotor.jpg');
+        }
+        @keyframes animation {
+            from {
+                transform: translateY(0px);
+            }
+
+            to {
+                transform: translateY(50px);
+            }
+
+        }
+
+        input {
+            height: 30px;
+            width: 250px;
+            border-radius: 10px;
+
+        }
+
+        button {
+            position: relative;
+            left: 278px;
+            top: -26px;
+            border: 0px;
+            background-color: white;
+            height: 10px;
+
+        }
+
+        .center {
+            display: flex;
+            flex-direction: column;
+
+        }
+        .center-1{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .btn:focus-within+.container {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        ::placeholder {
+            text-align: center;
+            font-size: 17px;
+        }
+        img{
+            margin-left: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="center-1">
+            <div class="center">
+                <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/logo_Google_FullColor_3x_830x27.max-600x600.format-webp.webp"
+                    width="150px" alt="" style="display:block;">
+                <input type="text" placeholder="Click the Microphone" style="display: block;">
+            </div>
+        </div>
+        <button class="btn"><i class="fa-solid fa-microphone"></i></p></button>
+        <div class="container">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+            <div class="dot3"></div>
+            <div class="dot4"></div>
+        </div>
+    </div>
+</body>
+
+</html>
